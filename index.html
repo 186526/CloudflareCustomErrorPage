@@ -240,44 +240,10 @@
     </reason>
 
     <footer>
-        <provider>Running with <a href="https://cloudflare.com">Cloudflare</a>.</provider>
+        <provider>Running and Hosting with <a href="https://cloudflare.com">Cloudflare</a>.</provider>
         <br>
-        <request-status>Your IP is <code>::CLIENT_IP::</code><br> Ray ID is <code>::RAY_ID::</code><br> Hit in <code id="pop"> undefined </code></request-status>
+        <request-status>From the <a href="https://github.com/186526/CloudflareCustomErrorPage">186526/CloudflareCustomErrorPage</a> project.</request-status>
     </footer>
-
-    <none>
-        ::CLOUDFLARE_ERROR_500S_BOX::
-    </none>
-
-    <script>
-        const baseDetils = document.querySelector('.cf-error-details');
-        const ErrorMessage = baseDetils.querySelector('h1').innerText;
-        const Explain = baseDetils.querySelector('p').innerText;
-        let ErrorNumber = "5xx";
-        let POP = "undefined";
-        baseDetils
-            .querySelector('ul')
-                .childNodes.forEach(e=>
-                {
-                    if(e.innerText!==undefined){
-                        let check = e.innerText.replace("Error reference number: ","");
-                        if(check!==e.innerText){
-                            ErrorNumber = check;
-                            return;
-                        }
-                        check = e.innerText.replace("Cloudflare Location: ","");
-                        if(check!==e.innerText){
-                            POP = check;
-                            return;
-                        }
-                    }
-                })
-        document.querySelector("nav main").innerText = ErrorNumber;
-        document.querySelector("nav description").innerText = ErrorMessage;
-        document.querySelector("explain p").innerText = Explain;
-        document.querySelector("request-status #pop").innerText = POP;
-        document.querySelector("title").innerText = `${ErrorNumber} | ${ErrorMessage}`;
-    </script>
 
 </body>
 
