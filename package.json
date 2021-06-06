@@ -1,0 +1,16 @@
+{
+  "name": "cloudflarecustomerrorpage",
+  "version": "0.0.1",
+  "description": "Lightweight custom error page written for Cloudflare.",
+  "main": "app.js",
+  "repository": "git@github.com:186526/CloudflareCustomErrorPage.git",
+  "author": "186526 <i@186526.xyz>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "node index.js"
+  },
+  "devDependencies": {
+    "ejs": "^3.1.6"
+  }
+}
