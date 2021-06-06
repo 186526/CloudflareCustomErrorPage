@@ -1,0 +1,17 @@
+<status>
+    <card class="<%= config.card.client.color %>-card" id="client-status-card">
+        <icon class="material-icons-outlined <%= config.card.client.color %>-text">web_assets</icon>
+        <main><%= i18n.client %></main>
+        <status-text class="<%= config.card.client.color %>-text"><%= config.card.client.status %></status-text>
+    </card>
+    <card class="<%= config.card.edgeNetwork.color %>-card" id="client-status-card">
+        <icon class="material-icons-outlined <%= config.card.edgeNetwork.color %>-text">cloud</icon>
+        <main><%= i18n.edgeNetwork %></main>
+        <status-text class="<%= config.card.edgeNetwork.color %>-text"><%= config.card.edgeNetwork.status %></status-text>
+    </card>
+    <card class="<%= config.card.webServer.color %>-card" id="client-status-card">
+        <icon class="material-icons-outlined <%= config.card.webServer.color %>-text">dns</icon>
+        <main><%= i18n.webServer %></main>
+        <status-text class="<%= config.card.webServer.color %>-text"><%= config.card.webServer.status %></status-text>
+    </card>
+</status>

@@ -1,0 +1,183 @@
+:root {
+    --background-color: #fff;
+    --font-color: #000;
+    --font-color-lighter: rgb(87, 89, 88);
+    --font-size-main: 3.545rem;
+    --font-size-description: 1.245rem;
+    --box-color: #F2F2F2;
+    --working-color: #137333;
+    --working-color-background: #e6f4ea;
+    --error-color-background: #fce8e6;
+    --error-color: #c5221f;
+    --working-with-error-color: #b05a00;
+    --working-with-error-color-background: #fef7e0;
+    --icon-size: 48px;
+}
+
+body {
+    margin: 2rem 2rem;
+    font-family: Google Sans, Ubuntu, Roboto, Noto Sans SC, sans-serif;
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+header {
+    margin-left: 1rem;
+}
+
+header description {
+    font-family: Ubuntu, Roboto, Noto Sans SC, sans-serif;
+    font-size: var(--font-size-description);
+    line-height: var(--fonr-size-description);
+    color: var(--font-color-lighter);
+}
+
+header main {
+    font-size: var(--font-size-main);
+    line-height: var(--font-size-main);
+    font-family: Fira Mono, Ubuntu, monospace;
+}
+
+code {
+    font-family: Fira Mono, monospace;
+}
+
+none {
+    display: none;
+}
+
+status {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+status>card {
+    background-color: var(--box-color);
+    padding: 2rem;
+    margin: 1rem 1rem;
+    min-height: 3rem;
+    border-radius: 9px;
+    flex-grow: 1;
+}
+
+status>card.green-card {
+    background-color: var(--working-color-background);
+}
+
+status>card.red-card {
+    background-color: var(--error-color-background);
+}
+
+status>card.yellow-card {
+    background-color: var(--working-with-error-color-background);
+}
+
+
+status>card main {
+    font-size: calc(var(--font-size-description) + 0.1rem);
+}
+
+.green-text {
+    color: var(--working-color);
+}
+
+.red-text {
+    color: var(--error-color);
+}
+
+.yellow-text {
+    color: var(--working-with-error-color);
+}
+
+icon {
+    font-size: var(--icon-size) !important;
+}
+
+a {
+    text-decoration: none;
+    color: #1967d2;
+}
+
+reason {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+}
+
+reason>* {
+    display: block;
+    margin: 1rem;
+    flex-grow: 1;
+    max-width: 40%;
+}
+
+reason main {
+    font-size: calc(var(--font-size-description) + 0.2rem);
+    font-weight: 550;
+}
+
+footer {
+    margin: 1rem;
+    color: var(--font-color-lighter);
+    font-size: calc(var(--font-size-description) - 0.4rem);
+}
+
+footer>text {
+    font-size: calc(var(--font-size-description) - 0.6rem);
+}
+
+footer>* {
+    display: block;
+}
+
+@media screen and (max-width:480px) {
+    body {
+        margin: 6rem 2rem;
+    }
+    :root {
+        --font-size-main: 3.0rem;
+        --font-size-description: 1.045rem;
+    }
+
+    reason>* {
+        max-width: 100%;
+    }
+
+    footer {
+        font-size: calc(var(--font-size-description) - 0.2rem);
+    }
+
+    footer>text {
+        font-size: calc(var(--font-size-description) - 0.4rem);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 8% 10%;
+    }
+
+    header>* {
+        display: inline-block;
+        margin-left: 1%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --font-color: rgba(255, 255, 255, 0.86);
+        --font-color-lighter: rgba(255, 255, 255, 0.4);
+        --background-color: rgb(0, 0, 0);
+        --box-color: rgb(40 40 40 / 73%);
+        --working-color-background: #07220f;
+        --error-color-background: #270501;
+        --working-with-error-color-background: #392605;
+    }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('lib/head'); %>
+<body>
+
+        <header>
+            <main>
+                <%= config.statusCode %>
+            </main>
+            <description>
+                <%= config.text %>
+            </description>
+        </header>
+
+        <%- include('lib/card') -%>
+        <%- include('lib/reason') -%>
+</body>
+
+<%- include('lib/footer') -%>
+
+<none>
+::CLOUDFLARE_ERROR_1000S_BOX::
+::CLOUDFLARE_ERROR_500S_BOX::
+</none>
+
+<script>
+    (<%- config.script.toString() %>)()
+</script>
+
+</html>
