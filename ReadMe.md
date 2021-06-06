@@ -8,11 +8,11 @@ Official Demo URL: [cloudflarecustomerrorpage.pages.dev](https://cloudflarecusto
 
 | Types | URL |
 |----|----|
-|5XX Error| <https://cloudflarecustomerrorpage.pages.dev/5xxerror.html>|
-|10XX Error |<https://cloudflarecustomerrorpage.pages.dev/1xxxerror.html>|
-|Rate Limited|<https://cloudflarecustomerrorpage.pages.dev/1015.html>|
-|WAF Block|<https://cloudflarecustomerrorpage.pages.dev/block-waf.html>|
-|IP Banned|<https://cloudflarecustomerrorpage.pages.dev/block-ip.html>|
+|5XX Error| <https://cloudflarecustomerrorpage.pages.dev/5xxerror>|
+|10XX Error |<https://cloudflarecustomerrorpage.pages.dev/1xxxerror>|
+|Rate Limited|<https://cloudflarecustomerrorpage.pages.dev/1015>|
+|WAF Block|<https://cloudflarecustomerrorpage.pages.dev/block-waf>|
+|IP Banned|<https://cloudflarecustomerrorpage.pages.dev/block-ip>|
 
 ## License
 
