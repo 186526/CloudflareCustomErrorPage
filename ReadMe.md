@@ -9,7 +9,7 @@ Official Demo URL: [cloudflarecustomerrorpage.pages.dev](https://cloudflarecusto
 | Types | URL |
 |----|----|
 |5XX Error| <https://cloudflarecustomerrorpage.pages.dev/5xxerror.html>|
-|10XX Error |<https://cloudflarecustomerrorpage.pages.dev/1xxerror.html>|
+|10XX Error |<https://cloudflarecustomerrorpage.pages.dev/10xxerror.html>|
 |Rate Limited|<https://cloudflarecustomerrorpage.pages.dev/1015.html>|
 |WAF Block|<https://cloudflarecustomerrorpage.pages.dev/block-waf.html>|
 |IP Banned|<https://cloudflarecustomerrorpage.pages.dev/block-ip.html>|
