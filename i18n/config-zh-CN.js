@@ -78,7 +78,7 @@ exports.builderConfig = [
         text: 'OK',
         card: helper.allWorking,
         reason: {
-            explain: "这是 CloudflareCustomErrorPage，一个以 ejs 模板编译器的轻量级错误页面，为 Cloudflare 所编写。",
+            explain: "这是 CloudflareCustomErrorPage，一个以 ejs 为模板编译器的轻量级错误页面，为 Cloudflare 所编写。",
             howtodo: "检查我们的项目，在<a href='https://github.com/186526/CloudflareCustomErrorPage'>GitHub</a>。"
         },
         footer: [
@@ -224,7 +224,7 @@ exports.builderConfig = [
 ]
 
 exports.i18n = {
-    client: "您",
+    client: "您所运行的客户端",
     edgeNetwork: "Cloudflare 边缘网络",
     webServer: "该站点服务器",
     provider: "与 <a href='https://cloudflare.com'>Cloudflare</a> 一同运行。",
