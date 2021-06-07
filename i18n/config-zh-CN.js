@@ -1,7 +1,7 @@
 const helper = {
     allWorking: {
         client: {
-            status: "运行",
+            status: "正常",
             color: "green",
         },
         edgeNetwork: {
@@ -15,7 +15,7 @@ const helper = {
     },
     ServerError: {
         client: {
-            status: "运行",
+            status: "正常",
             color: "green",
         },
         edgeNetwork: {
@@ -29,7 +29,7 @@ const helper = {
     },
     edgeError: {
         client: {
-            status: "运行",
+            status: "正常",
             color: "green",
         },
         edgeNetwork: {
@@ -43,7 +43,7 @@ const helper = {
     },
     edgeBanned: {
         client: {
-            status: "运行",
+            status: "正常",
             color: "green",
         },
         edgeNetwork: {
