@@ -1,90 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <meta name="renderer" content="webkit" />
     <meta name="force-rendering" content="webkit" />
     <meta name="backend-renderer" content="ejs" />
     <meta name="custom-page" content="186526/CloudflareCustomErrorPage" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans&family=Fira+Mono&family=Ubuntu&display=swap"
-        rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&family=Fira+Mono&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
     <title>1020 | Access denied</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
-    <link href="/index.css" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link href="/index.css" rel="stylesheet" />
     <script defer>
-        document.head.innerHTML += `<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">`;
+      document.head.innerHTML += `<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">`;
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <main>1020</main>
+      <description> Access denied </description>
+    </header>
 
-        <header>
-            <main>
-                1020
-            </main>
-            <description>
-                Access denied
-            </description>
-        </header>
-
-        <status>
-    <card class="green-card" id="client-status-card">
+    <status>
+      <card class="green-card" id="client-status-card">
         <icon class="material-icons-outlined green-text">web_assets</icon>
         <main>Your Client</main>
         <status-text class="green-text">Working</status-text>
-    </card>
-    <card class="green-card" id="client-status-card">
+      </card>
+      <card class="green-card" id="client-status-card">
         <icon class="material-icons-outlined green-text">cloud</icon>
         <main>Cloudflare Edge Network</main>
         <status-text class="green-text">Working</status-text>
-    </card>
-    <card class="yellow-card" id="client-status-card">
+      </card>
+      <card class="yellow-card" id="client-status-card">
         <icon class="material-icons-outlined yellow-text">dns</icon>
         <main>Web Server</main>
         <status-text class="yellow-text">Unknown</status-text>
-    </card>
-</status>        <reason>
-    <explain>
-        <main>
-            What happened?
-        </main>
-        <p>A client or browser is blocked by a Cloudflare customer’s Firewall Rules.</p>
-    </explain>
-    <howtodo>
-        <main>
-            What can I do?
-        </main>
-        <p>Provide the website owner with a screenshot of the 1020 error message you received.</p>
-    </howtodo>
-</reason></body>
+      </card>
+    </status>
+    <reason>
+      <explain>
+        <main>What happened?</main>
+        <p>
+          A client or browser is blocked by a Cloudflare customer’s Firewall
+          Rules.
+        </p>
+      </explain>
+      <howtodo>
+        <main>What can I do?</main>
+        <p>
+          Provide the website owner with a screenshot of the 1020 error message
+          you received.
+        </p>
+      </howtodo>
+    </reason>
+  </body>
 
-<footer>
-    <provider>Running and Hosting with <a href='https://cloudflare.com'>Cloudflare</a>.</provider>
-    <br>
+  <footer>
+    <provider
+      >Running and Hosting with
+      <a href="https://cloudflare.com">Cloudflare</a>.</provider
+    >
+    <br />
     <text>
-        
-            From the <a href="https://github.com/186526/CloudflareCustomErrorPage">186526/CloudflareCustomErrorPage</a> project.
-            <br>
-        
-            Your IP is <code> ::CLIENT_IP:: </code>
-            <br>
-        
-            Ray ID is <code>::RAY_ID::</code>
-            <br>
-        
+      From the
+      <a href="https://github.com/186526/CloudflareCustomErrorPage"
+        >186526/CloudflareCustomErrorPage</a
+      >
+      project.
+      <br />
+
+      Your IP is <code> ::CLIENT_IP:: </code>
+      <br />
+
+      Ray ID is <code>::RAY_ID::</code>
+      <br />
     </text>
-</footer>
-<none>
-::CLOUDFLARE_ERROR_1000S_BOX::
-::CLOUDFLARE_ERROR_500S_BOX::
-</none>
+  </footer>
+  <none> ::CLOUDFLARE_ERROR_1000S_BOX:: ::CLOUDFLARE_ERROR_500S_BOX:: </none>
 
-<script>
-    (function () {})()
-</script>
-
+  <script>
+    (function () {})();
+  </script>
 </html>

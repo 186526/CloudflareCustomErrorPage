@@ -1,90 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
     <meta name="renderer" content="webkit" />
     <meta name="force-rendering" content="webkit" />
     <meta name="backend-renderer" content="ejs" />
     <meta name="custom-page" content="186526/CloudflareCustomErrorPage" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans&family=Fira+Mono&family=Ubuntu&display=swap"
-        rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&family=Fira+Mono&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
     <title>1006 | 您的 IP 已经被封禁</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
-    <link href="/index.css" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link href="/index.css" rel="stylesheet" />
     <script defer>
-        document.head.innerHTML += `<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">`;
+      document.head.innerHTML += `<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">`;
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <main>1006</main>
+      <description> 您的 IP 已经被封禁 </description>
+    </header>
 
-        <header>
-            <main>
-                1006
-            </main>
-            <description>
-                您的 IP 已经被封禁
-            </description>
-        </header>
-
-        <status>
-    <card class="green-card" id="client-status-card">
+    <status>
+      <card class="green-card" id="client-status-card">
         <icon class="material-icons-outlined green-text">web_assets</icon>
-        <main>您</main>
-        <status-text class="green-text">运行</status-text>
-    </card>
-    <card class="green-card" id="client-status-card">
+        <main>您所运行的客户端</main>
+        <status-text class="green-text">正常</status-text>
+      </card>
+      <card class="green-card" id="client-status-card">
         <icon class="material-icons-outlined green-text">cloud</icon>
         <main>Cloudflare 边缘网络</main>
         <status-text class="green-text">运行</status-text>
-    </card>
-    <card class="yellow-card" id="client-status-card">
+      </card>
+      <card class="yellow-card" id="client-status-card">
         <icon class="material-icons-outlined yellow-text">dns</icon>
         <main>该站点服务器</main>
         <status-text class="yellow-text">未知</status-text>
-    </card>
-</status>        <reason>
-    <explain>
-        <main>
-            发生了什么？
-        </main>
-        <p>所请求网站的站长修改了 Cloudflare 安全级别或者封禁了您的 IP 地址。自从站长禁用您的 IP 后，Cloudflare support 不能覆盖他们的配置。</p>
-    </explain>
-    <howtodo>
-        <main>
-            我该做什么？
-        </main>
+      </card>
+    </status>
+    <reason>
+      <explain>
+        <main>发生了什么？</main>
+        <p>
+          所请求网站的站长修改了 Cloudflare 安全级别或者封禁了您的 IP
+          地址。自从站长禁用您的 IP 后，Cloudflare support 不能覆盖他们的配置。
+        </p>
+      </explain>
+      <howtodo>
+        <main>我该做什么？</main>
         <p>请联系站长并提供该页面。</p>
-    </howtodo>
-</reason></body>
+      </howtodo>
+    </reason>
+  </body>
 
-<footer>
-    <provider>与 <a href='https://cloudflare.com'>Cloudflare</a> 一同运行。</provider>
-    <br>
+  <footer>
+    <provider
+      >与 <a href="https://cloudflare.com">Cloudflare</a> 一同运行。</provider
+    >
+    <br />
     <text>
-        
-            来自 <a href="https://github.com/186526/CloudflareCustomErrorPage">186526/CloudflareCustomErrorPage</a> 项目
-            <br>
-        
-            您的 IP 是 <code> ::CLIENT_IP:: </code>
-            <br>
-        
-            Ray ID 是 <code>::RAY_ID::</code>
-            <br>
-        
+      来自
+      <a href="https://github.com/186526/CloudflareCustomErrorPage"
+        >186526/CloudflareCustomErrorPage</a
+      >
+      项目
+      <br />
+
+      您的 IP 是 <code> ::CLIENT_IP:: </code>
+      <br />
+
+      Ray ID 是 <code>::RAY_ID::</code>
+      <br />
     </text>
-</footer>
-<none>
-::CLOUDFLARE_ERROR_1000S_BOX::
-::CLOUDFLARE_ERROR_500S_BOX::
-</none>
+  </footer>
+  <none> ::CLOUDFLARE_ERROR_1000S_BOX:: ::CLOUDFLARE_ERROR_500S_BOX:: </none>
 
-<script>
-    (function () {})()
-</script>
-
+  <script>
+    (function () {})();
+  </script>
 </html>
